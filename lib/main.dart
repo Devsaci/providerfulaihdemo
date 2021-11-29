@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: CounterPro(),
     );
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
 }
 
 class CounterPro extends StatefulWidget {
- CounterPro({Key? key}) : super(key: key);
+  CounterPro({Key? key}) : super(key: key);
 
   @override
   State<CounterPro> createState() => _CounterProState();
@@ -35,7 +35,9 @@ class _CounterProState extends State<CounterPro> {
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
+          setState(() {
 
+          });
         },
       ),
     );
