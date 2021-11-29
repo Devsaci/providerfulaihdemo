@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
       home: CounterPro(),
     );
@@ -16,7 +16,9 @@ class MyApp extends StatelessWidget {
 }
 
 class CounterPro extends StatelessWidget {
-  const CounterPro({Key? key}) : super(key: key);
+ CounterPro({Key? key}) : super(key: key);
+
+  int coubter = 0;
 
   @override
   Widget build(BuildContext context) {
