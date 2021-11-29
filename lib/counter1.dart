@@ -7,14 +7,14 @@ class Counter1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Card(
+    return  Card(
       color: Colors.deepOrangeAccent,
       elevation: 6,
       child: SizedBox(
         width: 150,
         height: 150,
         child: Center(
-          child: Text("0", style: TextStyle(fontSize: 30)),
+          child: Text(counter.toString(), style: TextStyle(fontSize: 30)),
         ),
       ),
     );
