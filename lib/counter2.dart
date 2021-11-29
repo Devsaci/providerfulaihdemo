@@ -14,7 +14,7 @@ class Counter2 extends StatelessWidget {
         width: 150,
         height: 150,
         child: Center(
-          child: Text("0", style: TextStyle(fontSize: 30)),
+          child: Text("$counter", style: TextStyle(fontSize: 30)),
         ),
       ),
     );
