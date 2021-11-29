@@ -19,7 +19,7 @@ class CounterPro extends StatefulWidget {
   CounterPro({Key? key}) : super(key: key);
 
   @override
-  _CounterProState createState() => _CounterProState();
+  State<CounterPro> createState() => _CounterProState();
 }
 
 class _CounterProState extends State<CounterPro> {
