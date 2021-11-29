@@ -36,7 +36,7 @@ class _CounterProState extends State<CounterPro> {
         child: const Icon(Icons.add),
         onPressed: () {
           setState(() {
-
+            coubter++;
           });
         },
       ),
