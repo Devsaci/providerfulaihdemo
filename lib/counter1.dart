@@ -7,7 +7,7 @@ class Counter1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Card(
+    return Card(
       color: Colors.deepOrangeAccent,
       elevation: 6,
       child: SizedBox(
