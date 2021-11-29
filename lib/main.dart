@@ -29,7 +29,7 @@ class _CounterProState extends State<CounterPro> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Provider State Management')),
-      body:  Center(
+      body: Center(
         child: Dashboard(counter),
       ),
       floatingActionButton: FloatingActionButton(

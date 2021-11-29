@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Counter2 extends StatelessWidget {
-  const Counter2({Key? key}) : super(key: key);
+  final int counter;
+
+  Counter2(this.counter);
 
   @override
   Widget build(BuildContext context) {
