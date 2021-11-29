@@ -24,9 +24,10 @@ class CounterPro extends StatefulWidget {
 
 class _CounterProState extends State<CounterPro> {
   int counter = 0;
-
+int n =0;
   @override
   Widget build(BuildContext context) {
+    print("n = ${n++}");
     return Scaffold(
       appBar: AppBar(title: const Text('Provider State Management')),
       body: Center(
