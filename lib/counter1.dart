@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 
 class Counter1 extends StatelessWidget {
-  final int counter;
-
-  Counter1(this.counter);
 
   @override
   Widget build(BuildContext context) {

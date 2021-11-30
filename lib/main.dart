@@ -20,15 +20,8 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class CounterPro extends StatefulWidget {
-  CounterPro({Key? key}) : super(key: key);
+class CounterPro extends StatelessWidget {
 
-  @override
-  State<CounterPro> createState() => _CounterProState();
-}
-
-class _CounterProState extends State<CounterPro> {
- // int counter = 0;
   int n = 0;
 
   @override
@@ -37,14 +30,12 @@ class _CounterProState extends State<CounterPro> {
     return Scaffold(
       appBar: AppBar(title: const Text('Provider State Management')),
       body: Center(
-        child: Dashboard(counter),
+        child: Dashboard(),
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
-          setState(() {
-            counter++;
-          });
+
         },
       ),
     );

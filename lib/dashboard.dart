@@ -3,9 +3,7 @@ import 'counter1.dart';
 import 'counter2.dart';
 
 class Dashboard extends StatelessWidget {
-  final int counter;
 
-  Dashboard(this.counter);
 
   @override
   Widget build(BuildContext context) {
@@ -23,9 +21,9 @@ class Dashboard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Counter1(counter),
+                Counter1(),
                 const SizedBox(width: 20),
-                Counter2(counter),
+                Counter2(),
               ],
             ),
           ],
