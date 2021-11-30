@@ -28,7 +28,7 @@ class CounterPro extends StatefulWidget {
 }
 
 class _CounterProState extends State<CounterPro> {
-  int counter = 0;
+ // int counter = 0;
   int n = 0;
 
   @override
