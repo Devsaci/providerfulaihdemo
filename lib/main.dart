@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ChangeNotifierProvider(
+      home: ChangeNotifierProvider<MyProvider>(
         create: (_) => MyProvider(),
         child: CounterPro(),
       ),
