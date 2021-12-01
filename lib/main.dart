@@ -1,41 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:providerfulaihdemo/provider/counter_provider.dart';
-import 'provider/dashboard.dart';
+import 'getX/views/counterx_pro.dart';
+
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ChangeNotifierProvider<CounterProvider>(
-        create: (_) => CounterProvider(),
-        child: CounterPro(),
-      ),
-    );
-  }
-}
 
-class CounterPro extends StatelessWidget {
-  int n = 0;
-
-  @override
-  Widget build(BuildContext context) {
-    print("n = ${n++}");
-    return Scaffold(
-      appBar: AppBar(title: const Text('Provider State Management')),
-      body: Center(
-        child: Dashboard(),
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.add),
-        onPressed: () {
-          Provider.of<CounterProvider>(context,listen: false).increment();
-        },
-      ),
+      // home: ChangeNotifierProvider<CounterProvider>(
+      //   create: (_) => CounterProvider(),
+      //   child: CounterPro(),
+      // ),
+      home: CounterXPro(),
     );
   }
 }

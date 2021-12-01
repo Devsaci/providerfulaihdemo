@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 import 'counter_provider.dart';
 
 class Counter1 extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -14,7 +13,10 @@ class Counter1 extends StatelessWidget {
         width: 150,
         height: 150,
         child: Center(
-          child: Text(Provider.of<CounterProvider>(context).counter.toString(), style: TextStyle(fontSize: 30)),
+          child: Text(
+            Provider.of<CounterProvider>(context).counter.toString(),
+            style: TextStyle(fontSize: 30),
+          ),
         ),
       ),
     );
