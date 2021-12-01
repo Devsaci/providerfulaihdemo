@@ -34,7 +34,7 @@ class CounterPro extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
-          Provider.of<MyProvider>(context).;
+          Provider.of<MyProvider>(context).increment();
         },
       ),
     );
