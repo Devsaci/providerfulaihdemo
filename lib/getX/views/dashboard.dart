@@ -3,8 +3,6 @@ import 'counter1.dart';
 import 'counter2.dart';
 
 class Dashboard extends StatelessWidget {
-
-
   @override
   Widget build(BuildContext context) {
     return Card(

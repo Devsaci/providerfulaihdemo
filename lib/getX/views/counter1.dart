@@ -15,10 +15,13 @@ class Counter1 extends StatelessWidget {
       child: SizedBox(
         width: 150,
         height: 150,
-        child: Center(
-          child: Text(
-            _counterController.counter.toString(),
-            style: TextStyle(fontSize: 30),
+        child: GetBuilder<CounterController>(
+          init: _counterController,
+          builder:(_) => Center(
+            child: Text(
+              _counterController.counter.toString(),
+              style: TextStyle(fontSize: 30),
+            ),
           ),
         ),
       ),

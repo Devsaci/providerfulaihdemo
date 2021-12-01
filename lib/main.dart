@@ -11,10 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Get.put(CounterController);
+    Get.put(CounterController());
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-
       // home: ChangeNotifierProvider<CounterProvider>(
       //   create: (_) => CounterProvider(),
       //   child: CounterPro(),
