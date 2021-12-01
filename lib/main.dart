@@ -21,7 +21,6 @@ class MyApp extends StatelessWidget {
 }
 
 class CounterPro extends StatelessWidget {
-
   int n = 0;
 
   @override
@@ -35,7 +34,7 @@ class CounterPro extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
-
+          Provider.of<MyProvider>(context).;
         },
       ),
     );
