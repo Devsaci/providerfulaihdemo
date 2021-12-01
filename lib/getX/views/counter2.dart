@@ -4,10 +4,11 @@ import '../controllers/counter_controller.dart';
 import 'counterx_pro.dart';
 
 class Counter2 extends StatelessWidget {
+  Counter2({Key key}) : super(key: key);
+  final CounterController _counterController = Get.find();
 
   @override
   Widget build(BuildContext context) {
-    int counter= 0;
     return Card(
       color: Colors.deepPurple,
       elevation: 6,
@@ -15,7 +16,10 @@ class Counter2 extends StatelessWidget {
         width: 150,
         height: 150,
         child: Center(
-          child: Text("$counter", style: TextStyle(fontSize: 30)),
+          child: Text(
+            "${_counterController.counter}",
+            style: TextStyle(fontSize: 30),
+          ),
         ),
       ),
     );

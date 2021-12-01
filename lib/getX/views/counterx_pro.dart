@@ -5,7 +5,7 @@ import 'dashboard.dart';
 
 class CounterXPro extends StatelessWidget {
   CounterXPro({Key key}) : super(key: key);
-final CounterController _counterController = Get.find();
+  final CounterController _counterController = Get.find();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
