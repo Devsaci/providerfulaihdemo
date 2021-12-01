@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:providerfulaihdemo/my_provider.dart';
-import 'dashboard.dart';
+import 'package:providerfulaihdemo/provider/counter_provider.dart';
+import 'provider/dashboard.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,8 +11,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ChangeNotifierProvider<MyProvider>(
-        create: (_) => MyProvider(),
+      home: ChangeNotifierProvider<CounterProvider>(
+        create: (_) => CounterProvider(),
         child: CounterPro(),
       ),
     );
@@ -33,7 +33,7 @@ class CounterPro extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
-          Provider.of<MyProvider>(context,listen: false).increment();
+          Provider.of<CounterProvider>(context,listen: false).increment();
         },
       ),
     );

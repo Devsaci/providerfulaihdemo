@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'my_provider.dart';
+import 'counter_provider.dart';
 
 class Counter1 extends StatelessWidget {
 
@@ -14,7 +14,7 @@ class Counter1 extends StatelessWidget {
         width: 150,
         height: 150,
         child: Center(
-          child: Text(Provider.of<MyProvider>(context).counter.toString(), style: TextStyle(fontSize: 30)),
+          child: Text(Provider.of<CounterProvider>(context).counter.toString(), style: TextStyle(fontSize: 30)),
         ),
       ),
     );
