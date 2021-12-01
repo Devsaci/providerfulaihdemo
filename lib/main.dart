@@ -3,10 +3,9 @@ import 'package:provider/provider.dart';
 import 'package:providerfulaihdemo/my_provider.dart';
 import 'dashboard.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +33,7 @@ class CounterPro extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
-          Provider.of<MyProvider>(context).increment();
+          Provider.of<MyProvider>(context,listen: false).increment();
         },
       ),
     );
