@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'getX/controllers/counter_controller.dart';
 import 'getX/views/counterx_pro.dart';
 
 
@@ -9,6 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Get.put(CounterController);
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
 
