@@ -14,10 +14,12 @@ class Counter2 extends StatelessWidget {
       child: SizedBox(
         width: 150,
         height: 150,
-        child: Center(
-          child: Text(
-            "${_counterController.counter.value}",
-            style: TextStyle(fontSize: 30),
+        child: Obx(
+          () => Center(
+            child: Text(
+              "${_counterController.counter.value}",
+              style: const TextStyle(fontSize: 30),
+            ),
           ),
         ),
       ),
