@@ -4,8 +4,8 @@ import '../controllers/counter_controller.dart';
 import 'counterx_pro.dart';
 
 class Counter1 extends StatelessWidget {
-  Counter1({Key key}) : super(key: key);
-  final CounterController _counterController = Get.find();
+  const Counter1({Key key}) : super(key: key);
+  // final CounterController _counterController = Get.find();
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +16,8 @@ class Counter1 extends StatelessWidget {
         width: 150,
         height: 150,
         child: GetX<CounterController>(
-          init: _counterController,
-          builder: (_) => Center(
+          // init: _counterController,
+          builder: (_counterController) => Center(
             child: Text(
               _counterController.counter.value.toString(),
               style: TextStyle(fontSize: 30),
