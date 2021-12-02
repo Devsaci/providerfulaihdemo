@@ -17,7 +17,7 @@ class Counter1 extends StatelessWidget {
         height: 150,
         child: GetBuilder<CounterController>(
           init: _counterController,
-          builder:(_) => Center(
+          builder: (_) => Center(
             child: Text(
               _counterController.counter.toString(),
               style: TextStyle(fontSize: 30),
