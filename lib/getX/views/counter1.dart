@@ -19,7 +19,7 @@ class Counter1 extends StatelessWidget {
           init: _counterController,
           builder: (_) => Center(
             child: Text(
-              _counterController.counter.toString(),
+              _counterController.counter.value.toString(),
               style: TextStyle(fontSize: 30),
             ),
           ),
