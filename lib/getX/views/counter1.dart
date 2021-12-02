@@ -15,7 +15,7 @@ class Counter1 extends StatelessWidget {
       child: SizedBox(
         width: 150,
         height: 150,
-        child: GetBuilder<CounterController>(
+        child: GetX<CounterController>(
           init: _counterController,
           builder: (_) => Center(
             child: Text(
