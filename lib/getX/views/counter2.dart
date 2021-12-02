@@ -16,7 +16,7 @@ class Counter2 extends StatelessWidget {
         height: 150,
         child: Center(
           child: Text(
-            "${_counterController.counter}",
+            "${_counterController.counter.value}",
             style: TextStyle(fontSize: 30),
           ),
         ),
